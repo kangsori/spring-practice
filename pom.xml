@@ -10,6 +10,9 @@
 		<module>guestbook03</module>
 		<module>logex</module>
 		<module>aoptest</module>
+		<module>fileupload</module>
+		<module>fileupload1</module>
+		<module>container</module>
 	</modules>
 	
 	<build>

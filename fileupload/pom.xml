@@ -5,9 +5,9 @@
 		<artifactId>spring-practice</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>hellospring</artifactId>
+	<artifactId>fileupload</artifactId>
 	<packaging>war</packaging>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
@@ -15,7 +15,6 @@
 		<maven.compiler.target>17</maven.compiler.target>
 		<org.springframewok-version>5.3.25</org.springframewok-version>
 	</properties>
-
 
 	<dependencies>
 		<!-- spring context -->
@@ -38,7 +37,26 @@
 		    <artifactId>spring-webmvc</artifactId>
 		    <version>${org.springframewok-version}</version>
 		</dependency>
-		
+
+		<!-- jstl -->
+		<dependency>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+			
+		<!-- File Upload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+				
 		<!-- servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -55,7 +73,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>hellospring</finalName>
+		<finalName>fileupload</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -63,5 +81,5 @@
 				<version>3.3.2</version>
 			</plugin>
 		</plugins>
-	</build>
+	</build>	
 </project>
