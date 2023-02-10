@@ -21,5 +21,6 @@ public class AppConfigTest {
 		
 		Friend friend = ac.getBean(Friend.class);
 		System.out.println(friend);
+		
 	}
 }
