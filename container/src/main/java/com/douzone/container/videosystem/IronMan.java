@@ -1,6 +1,6 @@
 package com.douzone.container.videosystem;
 
-public class Avengers implements DigitalVideoDisc {
+public class IronMan implements DigitalVideoDisc {
 	private String title = "Iron Man";
 	private String studio = "MARVEL";
 	
@@ -8,4 +8,5 @@ public class Avengers implements DigitalVideoDisc {
 	public String play() {
 		return "Playing Movie " + studio + "'s " + title;
 	}
+
 }
